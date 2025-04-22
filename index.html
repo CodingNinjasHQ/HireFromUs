@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Is your company recruiting engineers? Hire fresh engineering graduates from us.">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Hire from Us</title>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSRR859');
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="Hire-from-Us.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Muli">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site3",
+		"url": "index.html",
+		"logo": "images/CNLogo.png",
+		"sameAs": [
+				"#",
+				"#"
+		]
+}</script>
+    <meta property="og:title" content="Hire from Us">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  <style>
+/* The MIT License (MIT) Copyright (c) 2014 Toby */
+/* demo only */
+.flex { display: flex; }
+.align-center { justify-content: center; }
+.align-vert,.align-vert.align-center { align-items: center; }
+/* end demo */
+
+.modal { display: none; }
+.modal--show,
+.modal--hide { display: flex; } /* classes fired by js for animation control */
+
+/* This is on the wrapper for the whole modal */
+.modal--align {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal__container {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px 20px 0px 20px;
+  margin: 12px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+/* As there is no href to avoid the hash being added to the URL when clicked we add a pointer */
+/* This 'x' is hidden from screen readers as there is an accessible close button in the modal */
+.modal__close--x:hover {
+  cursor: pointer;
+}
+
+/* Animations */
+/* Open */
+.modal.modal--show {
+  animation: modal-open 0.3s;
+}
+
+@keyframes modal-open {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+/* Close */
+.modal.modal--hide {
+  animation: modal-close 0.3s;
+}
+
+@keyframes modal-close {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+.modal__close--x {
+  position: absolute;
+  line-height: 19px;
+  top: 10px;
+  right: 10px; 
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Open Sans", "Arial","sans-serif";
+  opacity: .2;
+}
+
+.modal {
+  text-align: center;
+}
+</style>
+
+<style>
+    .modal__container [class*="section"] {
+        display: block !important;
+        overflow: hidden;
+    }
+    .modal__close--x {
+        z-index: 1;
+    }
+</style>
+
+<script>
+var buttonSelector = 'a[href*="-popup"]',
+    parseId = function (href) { return href.replace('-popup', '').replace('#', ''); };
+window.onload = function () {
+    $('body').on('click', buttonSelector, function (event) {
+        var id = parseId(event.currentTarget.getAttribute('href'));
+
+        var modalId = 'modal-' + id;
+        if ($('#' + modalId).length === 0) {
+            $('body').append('<div class="flex align-center align-vert modal modal--align" id="' + modalId + '">' +
+                '    <div class="modal__container">' +
+                '        <span class="modal__close modal__close--x" aria-hidden="true">×</span>' +
+                '        ' + document.getElementById(id).outerHTML +
+                '    </div>' +
+                '</div>');      
+        }
+        $('#' + modalId).addClass('modal--show');
+    });
+
+
+    var closeModal = function (modal) {
+        modal.removeClass('modal--show');
+        modal.addClass('modal--hide');
+
+        var afterAnimation = function () {
+            modal.removeClass('modal--hide');   
+        };
+
+        // This listens for the CSS animations to finish and then hides the modal
+        modal[0].addEventListener("webkitAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("oAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("msAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("animationend", afterAnimation, false);
+        setTimeout(afterAnimation, 400);
+    }
+
+    // Close the modal with any element with class 'modal__close'
+    $('body').on('click', '.modal__close', function (e) {
+        closeModal($(e.currentTarget).closest('.modal'));
+    });
+
+
+    // Click outside of the modal and close it
+    window.onclick = function (e) {
+        if ($(e.target).is('.modal')) {
+            closeModal($(e.target));
+        }
+    }
+
+    // Use the escape key to close modal
+    document.onkeyup = function (e) {
+        e = e || window.event;
+        if (e.keyCode == 27 && $('.modal--show').length === 1) {
+            closeModal($('.modal--show'));
+        }
+    }
+};
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    var buttons = document.querySelectorAll(buttonSelector);
+    for (var i = 0; i < buttons.length; i++) {
+        var section = document.getElementById(parseId(buttons[i].getAttribute('href')));
+        if (section) {
+            section.style.display = 'none';
+        }       
+    }
+});
+
+</script></head>
+  <body data-home-page="Hire-from-Us.html" data-home-page-title="Hire from Us" class="u-body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSRR859"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+     <!-- End Google Tag Manager (noscript) -->
+    <header class="u-clearfix u-header u-sticky u-white u-header" id="sec-9a8a"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1">
+          <img src="https://files.codingninjas.com/new-cn-logos-1-31570.svg" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse u-custom-font" style="font-size: 1rem; letter-spacing: 0; font-family: Muli;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-light-1" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-light-1" href="#carousel_a325" style="padding: 10px 12px;">Profiles</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-light-1" href="#sec-70b6" style="padding: 10px 12px;">Why Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-light-1" href="#carousel_ac5c" style="padding: 10px 12px;">Our Faculty</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-light-1" href="#sec-d987" style="padding: 10px 12px;">Success Stories</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#carousel_a325" style="padding: 10px 12px;">Profiles</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#sec-70b6" style="padding: 10px 12px;">Why Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#carousel_ac5c" style="padding: 10px 12px;">Our Faculty</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#sec-d987" style="padding: 10px 12px;">Success Stories</a>
+</li></ul>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <a href="#carousel_3ca9" class="u-border-radius-4 u-btn u-btn-round u-button-style u-custom-font u-gradient u-none u-text-body-alt-color u-btn-1">HIRE OUR NINJAS</a>
+      </div></header>
+    <section class="u-align-center u-clearfix u-image u-section-1" id="sec-c7e2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-left u-border-radius-6 u-container-style u-group u-shape-round u-white u-group-1">
+          <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
+            <h3 class="u-custom-font u-text u-text-1">Find your next great hire with us</h3>
+            <img src="images/Group75.png" alt="" class="u-image u-image-default u-image-1" data-image-width="72" data-image-height="6">
+            <img src="images/Frame9.png" alt="" class="u-image u-image-default u-image-2" data-image-width="160" data-image-height="160">
+            <img src="images/Frame12.png" alt="" class="u-image u-image-default u-image-3" data-image-width="160" data-image-height="160">
+            <img src="images/Frame10.png" alt="" class="u-image u-image-default u-image-4" data-image-width="160" data-image-height="160">
+            <img src="images/Frame11.png" alt="" class="u-image u-image-default u-image-5" data-image-width="160" data-image-height="160">
+            <h3 class="u-custom-font u-text u-text-2">Pre-Trained</h3>
+            <h3 class="u-custom-font u-text u-text-default u-text-3">Job-Ready</h3>
+            <h3 class="u-custom-font u-text u-text-default u-text-4">Entry-Level</h3>
+            <h3 class="u-custom-font u-text u-text-default u-text-5">Talent-Pool</h3>
+            <a href="#carousel_3ca9" class="u-border-radius-6 u-btn u-btn-round u-button-style u-custom-font u-gradient u-none u-text-body-alt-color u-btn-1">HIRE OUR NINJAS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-white u-section-2" id="carousel_a325">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-left u-custom-font u-text u-text-1">Ninja Profiles</h3>
+        <p class="u-align-left u-custom-font u-text u-text-2">Hire from India’s largest online tech education company and the most preferred technical course platform for students across colleges in India with the content being developed &amp; delivered by alumni of Stanford, IITs, IIITs and industry experts from Amazon, Facebook, EY, etc.</p>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <div class="u-border-radius-5 u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-group u-palette-5-light-3 u-shape-round u-group-1">
+                    <div class="u-container-layout u-valign-top u-container-layout-2">
+                      <img src="images/MongoDB_Leaf_FullColor_RGB.svg" alt="" class="u-image u-image-contain u-image-default u-image-1">
+                      <img src="images/React-icon.svg" alt="" class="u-image u-image-default u-image-2">
+                      <img src="images/nodejs-expressjs-javascript-solution-stack-web-application-expressjs-png-800_490.jpg" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                      <img src="images/nodejs-new-pantone-black.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                      <p class="u-custom-font u-text u-text-3">
+                        <a href="#blockmodal1-popup">Full Stack developers (MERN Stack)</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="u-border-radius-5 u-container-style u-group u-palette-5-light-3 u-shape-round u-group-2" data-href="#blockmodal3-popup">
+                    <div class="u-container-layout u-valign-top-xs u-container-layout-3">
+                      <img src="images/HTML5_Badge.svg" alt="" class="u-image u-image-contain u-image-default u-image-5" data-image-width="512" data-image-height="512">
+                      <img src="images/CSS3_logo_and_wordmark.png" alt="" class="u-image u-image-contain u-image-default u-image-6">
+                      <img src="images/JavaScript-logo.png" alt="" class="u-image u-image-contain u-image-default u-image-7">
+                      <p class="u-custom-font u-text u-text-4">
+                        <a href="#blockmodal3-popup">Frontend developers</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-4">
+                  <div class="u-border-radius-5 u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-group u-palette-5-light-3 u-shape-round u-group-3" data-href="#blockmodal2-popup">
+                    <div class="u-container-layout u-valign-top u-container-layout-5">
+                      <img src="images/MongoDB_Leaf_FullColor_RGB.svg" alt="" class="u-image u-image-contain u-image-default u-image-8">
+                      <img src="images/nodejs-expressjs-javascript-solution-stack-web-application-expressjs-png-800_490.jpg" alt="" class="u-image u-image-contain u-image-default u-image-9">
+                      <img src="images/nodejs-new-pantone-black.png" alt="" class="u-image u-image-contain u-image-default u-image-10">
+                      <p class="u-custom-font u-text u-text-5">
+                        <a href="#blockmodal2-popup">Backend developers</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="u-border-radius-5 u-container-style u-group u-palette-5-light-3 u-shape-round u-group-4" data-href="#blockmodal4-popup">
+                    <div class="u-container-layout u-container-layout-6">
+                      <img src="images/Java.png" alt="" class=" u-image u-image-round u-image-11" data-image-width="60" data-image-height="60">
+                      <p class="u-custom-font u-text u-text-6">
+                        <a href="#blockmodal4-popup">Software development engineer</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-7">
+                  <p class="u-custom-font u-text u-text-default u-text-7">Other Profiles</p>
+                  <img src="images/DataScience.png" alt="" class="u-image u-image-default u-image-12">
+                  <p class="u-custom-font u-text u-text-8">Data Scientists</p>
+                  <img src="images/Android.png" alt="" class="u-image u-image-default u-image-13">
+                  <p class="u-custom-font u-text u-text-9">Android Developers</p>
+                  <img src="images/MachineLearning.png" alt="" class="u-image u-image-default u-image-14">
+                  <p class="u-custom-font u-text u-text-10">ML Engineers</p>
+                  <img src="images/Python.png" alt="" class="u-image u-image-default u-image-15">
+                  <p class="u-custom-font u-text u-text-11">Python Developers</p>
+                  <img src="images/CPP.png" alt="" class="u-image u-image-default u-image-16">
+                  <p class="u-custom-font u-text u-text-12">C++ Developers</p>
+                  <img src="images/Java.png" alt="" class="u-image u-image-default u-image-17" data-image-width="60" data-image-height="60">
+                  <p class="u-custom-font u-text u-text-13">Java Developers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-3" id="blockmodal1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/MongoDB_Leaf_FullColor_RGB.svg" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="216" data-image-height="448">
+        <img src="images/React-icon.svg" alt="" class="u-image u-image-default u-image-2" data-image-width="841" data-image-height="595">
+        <img src="images/nodejs-expressjs-javascript-solution-stack-web-application-expressjs-png-800_490.jpg" alt="" class="u-image u-image-contain u-image-default u-image-3" data-image-width="800" data-image-height="490">
+        <img src="images/nodejs-new-pantone-black.png" alt="" class="u-image u-image-contain u-image-default u-image-4" data-image-width="1600" data-image-height="617">
+        <p class="u-custom-font u-text u-text-1">Full Stack developers (MERN Stack)</p>
+        <p class="u-custom-font u-text u-text-default u-text-2">Course Overview</p>
+        <p class="u-custom-font u-text u-text-grey-40 u-text-3">Mongo DB database<br>Setting up Express JS setup<br>Backend development in Node JS<br>Frontend development in React JS
+        </p>
+        <p class="u-custom-font u-text u-text-custom-color-4 u-text-4">
+          <a href="#carousel_3ca9">Learn More about the training program</a>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-4" id="blockmodal2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/MongoDB_Leaf_FullColor_RGB.svg" alt="" class="u-image u-image-contain u-image-round u-image-1" data-image-width="216" data-image-height="448">
+        <img src="images/nodejs-expressjs-javascript-solution-stack-web-application-expressjs-png-800_490.jpg" alt="" class="u-image u-image-contain u-image-round u-image-2" data-image-width="800" data-image-height="490">
+        <img src="images/nodejs-new-pantone-black.png" alt="" class="u-image u-image-contain u-image-round u-image-3" data-image-width="1600" data-image-height="617">
+        <p class="u-custom-font u-text u-text-1">Backend developers</p>
+        <p class="u-custom-font u-text u-text-default u-text-2">Course Overview</p>
+        <p class="u-custom-font u-text u-text-grey-40 u-text-3">Setting up Express JS set up<br>2-3 mini projects in NodeJS<br>Using MongoDB database<br>WebAPIs and basics of AWS server
+        </p>
+        <p class="u-custom-font u-text u-text-custom-color-4 u-text-4">
+          <a href="#carousel_3ca9">Learn More about the training program</a>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-5" id="blockmodal3">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/HTML5_Badge.svg" alt="" class="u-image u-image-contain u-image-round u-image-1" data-image-width="512" data-image-height="512">
+        <img src="images/CSS3_logo_and_wordmark.png" alt="" class="u-image u-image-contain u-image-round u-image-2" data-image-width="293" data-image-height="332">
+        <img src="images/JavaScript-logo.png" alt="" class="u-image u-image-round u-image-3" data-image-width="1052" data-image-height="1052">
+        <p class="u-custom-font u-text u-text-1">Frontend developers</p>
+        <p class="u-custom-font u-text u-text-default u-text-2">Course Overview</p>
+        <p class="u-custom-font u-text u-text-grey-40 u-text-3">HTML and advanced CSS<br>Javascript and ES6<br>ReactJS and using Webpack and Babel<br>Redux in React and using Crud in Firebase
+        </p>
+        <p class="u-custom-font u-text u-text-custom-color-4 u-text-4">
+          <a href="#carousel_3ca9">Learn More about the training program</a>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-6" id="blockmodal4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/Java1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="60" data-image-height="60">
+        <p class="u-custom-font u-text u-text-1">Software development Engineer</p>
+        <p class="u-custom-font u-text u-text-default u-text-2">Course Overview</p>
+        <p class="u-custom-font u-text u-text-grey-40 u-text-3">Data Structures and Algorithms<br>OOPs concepts<br>Database Management System using SQL<br>Basics of System Design
+        </p>
+        <p class="u-custom-font u-text u-text-custom-color-4 u-text-4">
+          <a href="#carousel_3ca9">Learn More about the training program</a>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-hidden-sm u-hidden-xs u-white u-section-7" id="sec-c7d5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-border-radius-8 u-container-style u-expanded-width u-group u-palette-4-light-3 u-shape-round u-group-1">
+          <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
+            <h3 class="u-align-left u-custom-font u-text u-text-1">Tap into our Talent-Pool for free!</h3>
+            <a href="#carousel_3ca9" class="u-border-radius-6 u-btn u-btn-round u-button-style u-custom-font u-gradient u-none u-text-body-alt-color u-btn-1">HIRE OUR NINJAS</a>
+            <p class="u-align-left u-custom-font u-text u-text-2">Partner with you to create a long-term talent-pool, to source candidates that are aligned to your skill requirements, available all year round! We work closely with you to solve your Entry-Level tech hiring needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-8" id="sec-70b6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-left u-custom-font u-text u-text-1">Why CodingNinjas?</h2>
+        <div class="u-clearfix u-expanded-width u-gutter-16 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <img src="images/Group65.png" alt="" class="u-image u-image-default u-image-1">
+                  <p class="u-custom-font u-text u-text-2">Pre-Trained developers</p>
+                  <p class="u-custom-font u-text u-text-3">● 6 months immersive training<br>● 1:1 mentorship with industry experts<br>● Project based learning<br>● 800 hrs of learning &amp; assignments<br>● Industry vetted course content<br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <img src="images/Group66.png" alt="" class="u-image u-image-default u-image-2">
+                  <p class="u-custom-font u-text u-text-4">Diverse Talent Pool</p>
+                  <p class="u-custom-font u-text u-text-5">● Pan-India candidates<br>● 100+ colleges<br>● 0-3 years of experience<br>● 15k+ trained annually<br>● Across 10 profiles<br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3">
+                  <img src="images/Group67.png" alt="" class="u-image u-image-default u-image-3">
+                  <p class="u-custom-font u-text u-text-6">Zero Hiring Fees</p>
+                  <p class="u-custom-font u-text u-text-7">● No charges for our service<br>● Hassle free hiring<br>● All recruitment service such as candidate screening, scheduling &amp; tracking interviews, etc<br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-15 u-size-30-md u-layout-cell-4">
+                <div class="u-container-layout u-container-layout-4">
+                  <img src="images/Group68.png" alt="" class="u-image u-image-default u-image-4">
+                  <p class="u-custom-font u-text u-text-8">Bulk Hiring</p>
+                  <p class="u-custom-font u-text u-text-9">● Entry-Level Tech Acquisition partner<br>● Replace campus recruitment visits<br>● We work closely with Tech Companies to solve their entry-level Tech acquisition needs<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-9" id="sec-c728">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-left-xs u-border-radius-6 u-container-style u-expanded-width u-group u-palette-5-light-3 u-shape-round u-group-1">
+          <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
+            <h2 class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-custom-font u-text u-text-1">Where our alumni work</h2>
+          </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center-xs u-container-style u-expand-resize u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-2" src="">
+                  <img class="u-image u-image-contain u-image-1" src="images/image1.png">
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-valign-top-sm u-container-layout-3" src="">
+                  <img class="u-image u-image-contain u-image-2" src="images/image2.png">
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-3">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-valign-top-sm u-container-layout-4" src="">
+                  <img class="u-image u-image-contain u-image-3" src="images/image3.png">
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-15 u-size-30-md u-layout-cell-4">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-valign-top-sm u-container-layout-5" src="">
+                  <img class="u-image u-image-contain u-image-4" src="images/image4.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-2">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-5">
+                <div class="u-container-layout u-valign-middle u-container-layout-6" src="">
+                  <img class="u-image u-image-contain u-image-5" src="images/image5.png">
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-6">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-valign-top-sm u-container-layout-7" src="">
+                  <img class="u-image u-image-contain u-image-6" src="images/image6.png">
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-7">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-valign-top-sm u-container-layout-8" src="">
+                  <img class="u-image u-image-contain u-image-7" src="images/image7.png">
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-15 u-size-30-md u-layout-cell-8">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-valign-top-sm u-container-layout-9" src="">
+                  <img class="u-image u-image-contain u-image-8" src="images/1.svg" data-image-width="500" data-image-height="135">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-white u-section-10" id="sec-9c1a">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-custom-font u-text u-text-default u-text-1">Experienced Faculty</h2>
+      </div>
+    </section>
+    <section class="u-carousel u-slide u-valign-middle u-block-815c-1" id="carousel_ac5c" data-interval="5000" data-u-ride="carousel">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-815c-2">
+        <li data-u-target="#carousel_ac5c" data-u-slide-to="0" class="u-palette-2-light-1"></li>
+        <li data-u-target="#carousel_ac5c" class="u-palette-2-light-1" data-u-slide-to="1"></li>
+        <li data-u-target="#carousel_ac5c" class="u-palette-2-light-1" data-u-slide-to="2"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="u-align-left u-carousel-item u-clearfix u-white u-active u-section-11-1">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-shape-round u-size-20 u-size-20-md u-white u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-1" src="images/ankush-singla.png" data-image-width="80" data-image-height="80">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Ankush Singla</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">Cofounder, Instructor</p>
+                      <img src="images/Group71.png" alt="" class="u-image u-image-default u-image-2" data-image-width="135" data-image-height="30">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-3">He holds a Bachelor’s degree in Computer Science from India’s most premier institute - IIT Delhi and a Master’s degree in Computer Science from Stanford University. He is a coding enthusiast and has worked with bigwigs like Amazon and Facebook in the past.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-size-20 u-size-20-md u-white u-layout-cell-2">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-2">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-3" src="images/pic.png" data-image-width="81" data-image-height="80">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-4">Arpan Garg</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-5">Founding Member, Instructor</p>
+                      <img src="images/Screenshot2020-06-29at10.16.58AM.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-6">He holds a Bachelor’s degree in Electronics &amp; Communications and is well versed with Angular, React.JS and Python. He has been the organiser of Google Developers Group and has previously worked with companies like Spice Labs, Creative India and Kalpavriksh Healthcare.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-white u-layout-cell-3">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-3">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-5" src="images/pic2.png" data-image-width="80" data-image-height="80">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-7">Nidhi Agarwal</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-8">Founding Member, Instructor</p>
+                      <img src="images/Screenshot2020-06-29at10.18.17AM.png" alt="" class="u-image u-image-contain u-image-default u-image-6">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-9">She holds a Master’s degree in Technology from IIIT Delhi and has a great command on programming concepts. She has taught the Fundamentals and Data Structures in Java &amp; C++ for four years now.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left u-carousel-item u-clearfix u-white u-section-11-2">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-shape-round u-size-20 u-size-20-md u-white u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-1" src="images/0000000000000420.jpg">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Manisha Khattar</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">Founding Member, Instructor</p>
+                      <img src="images/Screenshot2020-06-29at10.14.16AM.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-3">She holds a Master’s from IIIT Delhi and has more than four years of teaching experience in advanced level C++, Java and Android courses. Her data analytics research work has been published in prestigious conferences.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-size-20 u-size-20-md u-white u-layout-cell-2">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-2">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-3" src="images/Screenshot2020-06-29at10.11.13AM.png">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-4">Navdeep Sandhu</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-5">Content Developer, Instructor</p>
+                      <img src="images/Group71.png" alt="" class="u-image u-image-default u-image-4" data-image-width="135" data-image-height="30">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-6">He holds a Bachelor's degree in Information &amp; Technology and has previously worked with firms like Ernst and Young. He works tirelessly for the student support and works closely with teaching assistants to enhance the student experience during their formative classes.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-white u-layout-cell-3">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-3">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-5" src="images/0000000000003687.png">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-7">Aakash Tyagi</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-8">Software Engineer, Instructor</p>
+                      <img src="images/Screenshot2020-06-29at10.19.23AM.png" alt="" class="u-image u-image-contain u-image-default u-image-6">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-9">He is expert in JavaScript &amp; React(Front-end) and worked on Open source projects like Firebug and Zulip. He served as a GCI(Google Code-In) Mentor with Zulip. In his previous roles in the past 3 years as a Software Engineer and worked for companies like Goibibo-MMT.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-carousel-item u-clearfix u-section-11-3">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-shape-round u-size-20 u-size-20-md u-white u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-1" src="images/pic3.png" data-image-width="80" data-image-height="80">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Arun Sharma</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">Instructor</p>
+                      <img src="images/Screenshot2020-06-29at10.20.18AM.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-3">He holds a Post-Graduate degree from Indian Institute of Management (IIM), Bengaluru and has been teaching CAT aspirants and corporate houses for more than 22 years. Besides this, he holds a unique distinction in clearing CAT 16 times in-a-row, with a score of 99.99 percentile in 2008.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-size-20 u-size-20-md u-white u-layout-cell-2">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-2">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-3" src="images/pic4.png" data-image-width="80" data-image-height="80">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-4">Parikh Jain</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-5">Software Developer, Instructor</p>
+                      <img src="images/Screenshot2020-06-29at10.14.04AM.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-6">He holds a Bachelor’s degree in Computer Science from Delhi Technological University (DTU) and is currently working with Coding Ninjas. He has contributed majorly towards CodeZen, an online platform of Coding Ninjas for students to learn and take attempts in coding.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-white u-layout-cell-3">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-3">
+                      <img class="u-border-1 u-border-grey-15 u-border-radius-8 u-expand-resize u-image u-image-round u-image-5" src="images/0000000000002084.jpeg">
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-7">Meenakshi Upadhyay</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-8">Instructor</p>
+                      <img src="images/Screenshot2020-06-29at10.20.18AM.png" alt="" class="u-image u-image-contain u-image-default u-image-6" data-image-width="48" data-image-height="37">
+                      <p class="u-custom-font u-hidden-xs u-text u-text-default u-text-grey-90 u-text-9">She is an alumnus of Indian Institute of Management (IIM), Bengaluru and holds more than 15 years of experience in training students for the competitive and entrance levels examinations like CAT, CSAT and many more. Her focus lies in enriching the overall learning experience of a student.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-15 u-block-815c-3" href="#carousel_ac5c" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-15 u-block-815c-4" href="#carousel_ac5c" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <section class="u-clearfix u-section-12" id="sec-d987">
+      <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
+        <div class="u-align-left u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-custom-font u-text u-text-default u-text-1">Success Stories</h2>
+            <h2 class="u-custom-font u-text u-text-2">Hundreds of companies have found their ideal candidate with us</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-carousel u-hidden-lg u-hidden-md u-hidden-xl u-slide u-valign-middle u-block-fbdd-1" id="carousel_6c66" data-interval="5000" data-u-ride="carousel">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-fbdd-2">
+        <li data-u-target="#carousel_6c66" data-u-slide-to="0" class="u-palette-2-light-1"></li>
+        <li data-u-target="#carousel_6c66" class="u-palette-2-light-1" data-u-slide-to="1"></li>
+        <li data-u-target="#carousel_6c66" class="u-palette-2-light-1" data-u-slide-to="2"></li>
+        <li data-u-target="#carousel_6c66" class="u-palette-2-light-1" data-u-slide-to="3"></li>
+        <li data-u-target="#carousel_6c66" class="u-palette-2-light-1" data-u-slide-to="4"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="u-align-left u-carousel-item u-clearfix u-white u-active u-section-13-1">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-palette-2-light-3 u-shape-round u-size-60 u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-1">
+                        <div class="u-container-layout u-container-layout-2">
+                          <img src="images/0000000000001976.png" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="119" data-image-height="30">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Rachana Ba</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">HR Team, CueMath</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-3">We received some really good profiles for the Software development Intern role, and we managed to finalize on a few good candidates. The candidates did really well in their interview rounds and were very accommodating and prompt in terms of their scheduled interviews. Can't wait to welcome them to the team and see what they have to contribute to the company!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left-xs u-carousel-item u-clearfix u-section-13-2">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-palette-5-light-3 u-shape-round u-size-60 u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-1">
+                        <div class="u-container-layout u-container-layout-2">
+                          <img src="images/logo_new_red_new.png" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="1202" data-image-height="260">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Nischal Gaba</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">Founder, Unreal AI</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-3">The experience from hiring through Coding Ninjas was excellent. I found a good basic understanding among each of their course graduate about the field of data analytics and machine learning. We had quite a strict requirement for the position of intern, and was able to find lovely talent through them. I feel for companies with positions such as data analytics, it can be very useful. Definitely worth to connect with them.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left u-carousel-item u-clearfix u-white u-section-13-3">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-palette-2-light-3 u-shape-round u-size-60 u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-1">
+                        <div class="u-container-layout u-container-layout-2">
+                          <img src="images/0000000000002374.jpg" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="495" data-image-height="176">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Devesh Trivedi</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">CEO, CVision</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-3">The experience of hiring with Coding Ninjas was Fantastic. The team was very supportive throughout the process and we hired multiple ML Interns through them.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left u-carousel-item u-clearfix u-white u-section-13-4">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-palette-5-light-3 u-shape-round u-size-60 u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-1">
+                        <div class="u-container-layout u-container-layout-2">
+                          <img src="images/0000000000003149.png" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="300" data-image-height="235">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Kunal Aggarwal</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">Founder, Credflow</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-3">The experience of hiring with Coding Ninjas was very, very good. We hired interns as well as full-time roles.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left u-carousel-item u-clearfix u-white u-section-13-5">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-palette-5-light-3 u-shape-round u-size-60 u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-1">
+                        <div class="u-container-layout u-container-layout-2">
+                          <img src="images/0000000000003981.png" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="1600" data-image-height="566">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Shubham</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">HR, Trek</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-3">Great Work from the Coding Ninja Team. We saved our time and cost of hiring visiting campuses and it gave us a great experience as a company to recruit from one place and that too pre-trained with basic learning of programming. We are pleased to partner with Coding Ninja.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-15 u-block-fbdd-3" href="#carousel_6c66" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-15 u-block-fbdd-4" href="#carousel_6c66" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <section class="u-carousel u-hidden-md u-hidden-sm u-hidden-xs u-slide u-valign-middle u-block-6964-1" id="carousel_f7b3" data-interval="5000" data-u-ride="carousel">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-6964-2">
+        <li data-u-target="#carousel_f7b3" data-u-slide-to="0" class="u-palette-2-light-1"></li>
+        <li data-u-target="#carousel_f7b3" class="u-palette-2-light-1" data-u-slide-to="1"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="u-align-left u-carousel-item u-clearfix u-white u-active u-section-14-1">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-palette-2-light-3 u-shape-round u-size-20 u-size-20-md u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-valign-top u-container-layout-1">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-1">
+                        <div class="u-container-layout u-valign-middle u-container-layout-2">
+                          <img src="images/0000000000001976.png" alt="" class="u-image u-image-default u-image-1" data-image-width="119" data-image-height="30">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Rachana Ba</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">HR Team, CueMath</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-3">We received some really good profiles for the Software development Intern role, and we managed to finalize on a few good candidates. The candidates did really well in their interview rounds and were very accommodating and prompt in terms of their scheduled interviews. Can't wait to welcome them to the team and see what they have to contribute to the company!</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-palette-5-light-3 u-size-20 u-size-20-md u-layout-cell-2">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-3">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-2">
+                        <div class="u-container-layout u-container-layout-4">
+                          <img src="images/logo_new_red_new.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-4">Nishchal Gaba</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-5">Founder, Unreal AI</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-6">The experience from hiring through Coding Ninjas was excellent. I found a good basic understanding among each of their course graduate about the field of data analytics and machine learning. We had quite a strict requirement for the position of intern, and was able to find lovely talent through them. I feel for companies with positions such as data analytics, it can be very useful. Definitely worth to connect with them.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-palette-2-light-3 u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-5">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-3">
+                        <div class="u-container-layout u-container-layout-6">
+                          <img src="images/0000000000002374.jpg" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-7">Devesh Trivedi</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-8">CEO, CVision</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-9">The experience of hiring with Coding Ninjas was Fantastic. The team was very supportive throughout the process and we hired multiple ML Interns through them.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-carousel-item u-clearfix u-section-14-2">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-left-cell u-palette-5-light-3 u-shape-round u-size-20 u-size-20-md u-layout-cell-1">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-1">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-1">
+                        <div class="u-container-layout u-container-layout-2">
+                          <img src="images/0000000000003149.png" alt="" class="u-image u-image-contain u-image-default u-image-1">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-1">Kunal Aggarwal</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-2">Founder, Credflow</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-3">The experience of hiring with Coding Ninjas was very, very good. We hired interns as well as full-time roles.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-palette-2-light-3 u-size-20 u-size-20-md u-layout-cell-2">
+                    <div class="u-border-1 u-border-grey-25 u-container-layout u-container-layout-3">
+                      <div class="u-border-2 u-border-radius-4 u-border-white u-container-style u-group u-shape-round u-white u-group-2">
+                        <div class="u-container-layout u-container-layout-4">
+                          <img src="images/0000000000003981.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                        </div>
+                      </div>
+                      <p class="u-custom-font u-text u-text-grey-80 u-text-4">Shubham</p>
+                      <p class="u-custom-font u-text u-text-grey-60 u-text-5">HR, Trek</p>
+                      <p class="u-custom-font u-text u-text-default u-text-grey-90 u-text-6">Great Work from the Coding Ninja Team. We saved our time and cost of hiring visiting campuses and it gave us a great experience as a company to recruit from one place and that too pre-trained with basic learning of programming. We are pleased to partner with Coding Ninja.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-border-radius-6 u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-white u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-15 u-block-6964-3" href="#carousel_f7b3" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-15 u-block-6964-4" href="#carousel_f7b3" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <section class="u-clearfix u-section-15" id="sec-3bce">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
+    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-white u-section-16" id="carousel_3ca9">
+      <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-top u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xs u-size-40-xl u-image-1" src="">
+              <div class="u-container-layout u-valign-top-sm u-container-layout-1 u-text-margin-after-p">
+                <h3 class="u-custom-font u-text u-text-body-alt-color u-text-1">Access our pre-trained talent today</h3>
+                <img src="images/Group83.png" alt="" class="u-image u-image-default u-image-2">
+                <p class="u-custom-font u-text u-text-body-alt-color u-text-2">Hire from our Pan-India Talent pool, across 100+ colleges</p>
+                <img src="images/Group83.png" alt="" class="u-image u-image-default u-image-3" data-image-width="28" data-image-height="28">
+                <p class="u-custom-font u-text u-text-white u-text-3">Pre-Trained Developers available across 10 profiles</p>
+                <img src="images/Group83.png" alt="" class="u-image u-image-default u-image-4" data-image-width="28" data-image-height="28">
+                <p class="u-custom-font u-text u-text-white u-text-4">Experience ranging from 0 to 3 years</p>
+                <img src="images/Group83.png" alt="" class="u-image u-image-default u-image-5" data-image-width="28" data-image-height="28">
+                <p class="u-custom-font u-text u-text-body-alt-color u-text-5">Available for Full-Time as well as for Internships</p>
+                <img src="images/Group83.png" alt="" class="u-image u-image-default u-image-6" data-image-width="28" data-image-height="28">
+                <p class="u-custom-font u-text u-text-body-alt-color u-text-6">Complete recruitment services at no additional cost</p>
+                <img src="images/Group83.png" alt="" class="u-image u-image-default u-image-7" data-image-width="28" data-image-height="28">
+                <p class="u-custom-font u-text u-text-body-alt-color u-text-7">Solve your long-term Entry-Level Tech recruitment needs</p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20-xl u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xs u-white u-layout-cell-2" src="">
+              <div class="u-container-layout u-valign-bottom-xl u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                <div class="u-border-radius-6 u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-group u-shape-round u-white u-group-1">
+                  <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xl u-container-layout-3">
+                    <h3 class="u-custom-font u-text u-text-8">Get in touch</h3>
+                    <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
+                      <form id="regForm" class="u-clearfix u-form-spacing-24 u-form-vertical u-inner-form" style="padding: 0;" source="custom" name="form">
+                        <div class="u-form-group">
+                          <label for="name-b0be" class="u-custom-font u-form-control-hidden u-label u-text-font"></label>
+                          <input placeholder="Name" id="name-b0be" name="name" class="u-border-1 u-border-grey-30 u-border-radius-4 u-custom-font u-input u-input-round u-white u-input-1" required="required" type="text">
+                        </div>
+                        <div class="u-form-group u-form-group-2">
+                          <label for="text-bd66" class="u-form-control-hidden u-label"></label>
+                          <input type="text" name="company_name" placeholder="Company Name" id="text-bd66" name="text" class="u-border-1 u-border-grey-30 u-border-radius-4 u-custom-font u-input u-input-round u-white u-input-2" required="required">
+                        </div>
+                        <div class="u-form-email u-form-group u-form-group-3">
+                          <label for="email-b0be" class="u-custom-font u-form-control-hidden u-label u-text-font">Email</label>
+                          <input type="email" placeholder="Work email address" id="email-b0be" name="email" class="u-border-1 u-border-grey-30 u-border-radius-4 u-custom-font u-input u-input-round u-white u-input-3" required="">
+                        </div>
+                        <div class="u-form-group u-form-phone u-form-group-4">
+                          <label for="phone-ef40" class="u-form-control-hidden u-label">Phone</label>
+                          <input type="tel" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Contact Number" id="phone-ef40" name="mobile_number" class="u-border-1 u-border-grey-30 u-border-radius-4 u-custom-font u-input u-input-round u-white u-input-4" required="">
+                        </div>
+                        <div class="u-form-group u-form-group-5">
+                          <label for="text-dc30" class="u-form-control-hidden u-label"></label>
+                          <input type="text" placeholder="Designation" id="text-dc30" name="designation" class="u-border-1 u-border-grey-30 u-border-radius-4 u-custom-font u-input u-input-round u-white u-input-5">
+                        </div>
+                        <div class="u-form-group u-form-select u-form-group-6">
+                          <label for="select-4350" class="u-form-control-hidden u-label">Hiring For</label>
+                          <div class="u-form-select-wrapper">
+                            <select id="select-4350" name="hiring_position" class="u-border-1 u-border-grey-30 u-border-radius-4 u-custom-font u-input u-input-round u-white u-input-6" required="required">
+                              <option value="" selected disabled>Hiring Profile</option>
+                              <option value="SDE">SDE</option>
+                              <option value="Full Stack developers">Full Stack developers</option>
+                              <option value="Frontend developers">Frontend developers</option>
+                              <option value="Backend developers">Backend developers</option>
+                              <option value="Java developers">Java developers</option>
+                              <option value="Data Scientists">Data Scientists</option>
+                              <option value="Android Developers">Android Developers</option>
+                              <option value="ML Engineers">ML Engineers</option>
+                              <option value="Python Developers">Python Developers</option>
+                              <option value="C++ Developers">C++ Developers</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                          </div>
+                        </div>
+                        <div class="u-form-group u-form-select u-form-group-7">
+                          <label for="select-8c6b" class="u-form-control-hidden u-label">How did you hear about us?</label>
+                          <div class="u-form-select-wrapper">
+                            <select id="select-8c6b" name="know_us" class="u-border-1 u-border-grey-30 u-border-radius-4 u-custom-font u-input u-input-round u-white u-input-7">
+                              <option value="" selected disabled>How did you hear about us?</option>
+                              <option value="Hirist">Hirist</option>
+                              <option value="Employee Recommendation">Employee Recommendation</option>
+                              <option value="LinkedIn Ads">LinkedIn Ads</option>
+                              <option value="Google Search">Google Search</option>
+                              <option value="IIMJobs Magazine">IIMJobs Magazine</option>
+                              <option value="Word of mouth">Word of mouth</option>
+                              <option value="Other">Other</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                          </div>
+                        </div>
+                        <div class="u-align-left u-form-group u-form-submit">
+                          <a href="#" class="u-border-radius-6 u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-gradient u-none u-text-body-alt-color u-btn-1">GET IN TOUCH</a>
+                          <input type="submit" value="submit" class="u-form-control-hidden">
+                        </div>
+                        <div class="u-form-send-message u-form-send-success" id="form-submitting-feedback"> Submitting... </div>
+                        <div class="u-form-send-message u-form-send-success" id="form-success-feedback"> Thank you! Your message has been sent. </div>
+                        <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                        <input type="hidden" value="" name="recaptchaResponse">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-footer u-grey-90 u-footer" id="sec-944d"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-expanded-width-xs u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-15 u-layout-cell-1">
+                <div class="u-container-layout u-valign-top-sm u-container-layout-1" style="padding-top: 24px">
+                  <a href="https://www.codingninjas.com/" target="_blank" class="u-image u-logo u-image-1">
+                    <img src="https://files.codingninjas.com/new-cn-logos-2-31571.svg" class="u-logo-image u-logo-image-1">
+                  </a>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2"><!--position-->
+                  <div data-position="" class="u-position u-position-1"><!--block-->
+                    <div class="u-block">
+                      <div class="u-block-container u-clearfix"><!--block_header-->
+                        <h5 class="u-block-header u-custom-font u-text u-text-custom-color-4 u-text-1"><!--block_header_content--> Coding Ninjas<!--/block_header_content--></h5><!--/block_header--><!--block_content-->
+                        <div class="u-block-content u-custom-font u-text u-text-2">
+                          <!--block_content_content--> 
+                          <a href="https://www.codingninjas.com/about" target="_blank">About Us</a>
+                          <br>
+                          <a href="https://www.codingninjas.com/blog" target="_blank">Blog</a>
+                          <br>
+                          <a href="https://www.codingninjas.com/policy/privacy.pdf" target="_blank">Privacy Policy</a>
+                          <br>
+                          <a href="https://www.codingninjas.com/policy/tnc.pdf" target="_blank">Terms &amp; Conditions</a>
+                          <br>
+                          <a href="https://www.codingninjas.com/policy/pricing-and-refund.pdf" target="_blank">Pricing &amp; Refund Policy</a>
+                          <br>
+                          <a href="https://www.codingninjas.com/bug-bounty" target="_blank">Bug Bounty</a>
+                          <!--/block_content_content-->
+                        </div><!--/block_content-->
+                      </div>
+                    </div><!--/block-->
+                  </div><!--/position-->
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-layout-cell-3">
+                <div class="u-container-layout u-valign-top u-container-layout-3"><!--position-->
+                  <div data-position="" class="u-position u-position-2"><!--block-->
+                    <div class="u-block">
+                      <div class="u-block-container u-clearfix"><!--block_header-->
+                        <h5 class="u-block-header u-custom-font u-text u-text-custom-color-4 u-text-3"><!--block_header_content-->Other Products<!--/block_header_content--></h5><!--/block_header--><!--block_content-->
+                        <div class="u-block-content u-custom-font u-text u-text-4">
+                          <!--block_content_content--> 
+                         <a href="https://careercamp.codingninjas.com/" target="_blank">Job Bootcamp</a>
+                          <br>
+                          <a href="https://www.codingninjas.com/hire-from-us" target="_blank">Hire Talent
+                          <br>
+                          <a href="https://www.codingninjas.com/events" target="_blank">Events</a>
+                          <br>
+                          <a href="https://campus.codingninjas.com/" target="_blank">Campus Ninja</a>
+                          <br>
+                          <a href="https://www.codingninjas.com/courses" target="_blank">Upskilling Courses</a>
+                          <br>
+                          <!--/block_content_content-->
+                        </div><!--/block_content-->
+                      </div>
+                    </div><!--/block-->
+                  </div><!--/position-->
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-layout-cell-4">
+                <div class="u-container-layout u-valign-top u-container-layout-4"><!--position-->
+                  <div data-position="" class="u-position u-position-3"><!--block-->
+                    <div class="u-block">
+                      <div class="u-block-container u-clearfix"><!--block_header-->
+                        <h5 class="u-block-header u-custom-font u-text u-text-custom-color-4 u-text-5"><!--block_header_content--><b> Contact Us</b><!--/block_header_content-->
+                        </h5><!--/block_header--><!--block_content-->
+                        <div class="u-block-content u-custom-font u-text u-text-6"><!--block_content_content--> 
+                          <a href="tel:18001233598">1800 - 123 - 3598 (ext: 3)</a>
+                          <br>
+                          <a href = "mailto: hire@codingninjas.com ">hire@codingninjas.com </a>
+                          <!--/block_content_content-->
+                        </div><!--/block_content-->
+                      </div>
+                    </div><!--/block-->
+                  </div><!--/position-->
+                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" target="_blank" href="https://www.facebook.com/codingninjas">
+                      <span class="u-icon u-icon-circle u-social-facebook u-social-type-logo u-icon-1">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-092d"></use></svg>
+                        <svg x="0px" y="0px" viewBox="0 0 112 112" id="svg-092d" class="u-svg-content"><path d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg>
+                      </span>
+                    </a>
+                    <a class="u-social-url" target="_blank" href="https://twitter.com/CodingNinjasIN">
+                      <span class="u-icon u-icon-circle u-social-twitter u-social-type-logo u-icon-2">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c49d"></use></svg>
+                        <svg x="0px" y="0px" viewBox="0 0 112 112" id="svg-c49d" class="u-svg-content"><path d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path></svg>
+                      </span>
+                    </a>
+                    <a class="u-social-url" target="_blank" href="https://www.instagram.com/coding.ninjas/">
+                      <span class="u-icon u-icon-circle u-social-instagram u-social-type-logo u-icon-3">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-575a"></use></svg>
+                        <svg x="0px" y="0px" viewBox="0 0 112 112" id="svg-575a" class="u-svg-content"><path d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg>
+                      </span>
+                    </a>
+                    <a class="u-social-url" target="_blank" href="https://www.youtube.com/channel/UCZJlMUYdbtzQ8tVfLvK1KvQ">
+                      <span class="u-icon u-icon-circle u-social-type-logo u-social-youtube u-icon-4">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-af27"></use></svg>
+                        <svg x="0px" y="0px" viewBox="0 0 112 112" id="svg-af27" class="u-svg-content"><path d="M82.3,24H29.7C19.3,24,11,32.5,11,43v26.7c0,10.5,8.3,19,18.7,19h52.5c10.3,0,18.7-8.5,18.7-19V43 C101,32.5,92.7,24,82.3,24L82.3,24z M69.7,57.6L45.1,69.5c-0.7,0.2-1.4-0.2-1.4-0.8V44.1c0-0.7,0.8-1.3,1.4-0.8l24.6,12.6 C70.4,56.2,70.4,57.3,69.7,57.6L69.7,57.6z"></path></svg>
+                      </span>
+                    </a>
+                    <a class="u-social-url" target="_blank" href="https://www.linkedin.com/company/coding-ninjas-india/">
+                      <span class="u-icon u-icon-circle u-social-linkedin u-social-type-logo u-icon-5">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-84cf"></use></svg>
+                        <svg x="0px" y="0px" viewBox="0 0 112 112" id="svg-84cf" class="u-svg-content"><path d="M33.8,96.8H14.5v-58h19.3V96.8z M24.1,30.9L24.1,30.9c-6.6,0-10.8-4.5-10.8-10.1c0-5.8,4.3-10.1,10.9-10.1 S34.9,15,35.1,20.8C35.1,26.4,30.8,30.9,24.1,30.9z M103.3,96.8H84.1v-31c0-7.8-2.7-13.1-9.8-13.1c-5.3,0-8.5,3.6-9.9,7.1 c-0.6,1.3-0.6,3-0.6,4.8V97H44.5c0,0,0.3-52.6,0-58h19.3v8.2c2.6-3.9,7.2-9.6,17.4-9.6c12.7,0,22.2,8.4,22.2,26.1V96.8z"></path></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+  </body>
+</html>
