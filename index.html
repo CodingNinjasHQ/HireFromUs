@@ -18,18 +18,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
 
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-  <script src="./assets/vendor/php-email-form/validate.js"></script>
+  <style>
+  /* Make charts responsive and smaller */
+  .carousel-item canvas {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item canvas {
+      max-height: 250px;
+    }
+  }
+
+  .carousel-item p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+</style>
+
+
   <!-- =======================================================
   * Template Name: eNno
   * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
@@ -85,24 +107,29 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero section py-5">
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <h1>Find your next great hire</h1>
-            <p>Access pre-vetted, job-ready <b>Quality</b> candidates trained by industry experts at <b>Zero</b> cost</p>
-            <div class="d-flex">
-              <a href="#hire-from-us" class="btn-get-started">Start Hiring</a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-          </div>
-        </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-between gy-5">
+      
+      <!-- Text Section -->
+      <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up">
+        <h1 class="display-5 fw-bold mb-3">Find your next great hire</h1>
+        <p class="lead mb-4">
+          Access pre-vetted, job-ready <strong>Quality</strong> candidates trained by industry experts at <strong>Zero</strong> cost.
+        </p>
+        <a href="#hire-from-us" class="btn btn-get-started">Start Hiring</a>
       </div>
 
-    </section><!-- /Hero Section -->
+      <!-- Image Section -->
+      <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="zoom-out" data-aos-delay="100">
+        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Hero Image" style="max-height: 400px;">
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
      <section id="featured-services" class="featured-services section">
 
@@ -153,88 +180,58 @@
 
     <!-- Testimonials Section -->
     <section id="recruiters" class="portfolio section light-background">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Recent Recruiters</h2>
+    <p>Top companies hire from us—be the next to build your dream team!</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Recruiters</h2>
-        <p>Top companies hire from us—be the next to build your dream team!</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/1.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/2.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/3.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/4.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/5.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/6.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/7.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/8.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/9.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/10.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/11.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/logos/partners/12.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-          
-
-          
-
-          
-
-        </div>
-
+  <div class="container">
+    <div class="row gy-4 justify-content-center">
+      <!-- Recruiter logos -->
+      <!-- Loop this div for each logo -->
+      <!-- You can dynamically generate this in backend/JS if needed -->
+      <!-- Example with just 6 logos for brevity -->
+      <!-- Adjust 'col' classes for responsive layout -->
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/1.png" class="img-fluid" alt="Recruiter 1">
       </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/2.png" class="img-fluid" alt="Recruiter 2">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/3.png" class="img-fluid" alt="Recruiter 3">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/4.png" class="img-fluid" alt="Recruiter 4">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/5.png" class="img-fluid" alt="Recruiter 5">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/6.png" class="img-fluid" alt="Recruiter 6">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/7.png" class="img-fluid" alt="Recruiter 7">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/8.png" class="img-fluid" alt="Recruiter 8">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/9.png" class="img-fluid" alt="Recruiter 9">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/10.png" class="img-fluid" alt="Recruiter 10">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/11.png" class="img-fluid" alt="Recruiter 11">
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
+        <img src="assets/logos/partners/12.png" class="img-fluid" alt="Recruiter 12">
+      </div>
+    </div>
+  </div>
+</section>
 
-     </section>
 
      <section id="testimonials" class="testimonials section">
 
@@ -412,58 +409,50 @@
     </section><!-- /Testimonials Section -->
 
 
-    <section id="talentpool" class="about section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Talent Pool</h2>
-        <p>Trusted by 103 out of 111 Indian unicorns. If they rely on Coding Ninjas talent—why shouldn’t you?</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-8 content">
-
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-        <div class="carousel-inner">
-         
-
-         <div class="carousel-item active">
-        <canvas id="locationChart"></canvas>
-        <center><p><br><b>Primary Location Preference Distribution</b></p></center>
-      </div>
-
-      <!-- Slide 2: Profile Preference -->
-      <div class="carousel-item">
-        <canvas id="profileChart"></canvas>
-            <center><p><br><b>Primary Profile Preference Distribution</b></p></center>
-      </div>
-
-      <!-- Slide 3: Age Distribution -->
-      <div class="carousel-item">
-        <canvas id="ageChart"></canvas>
-        <center><p><br><b>Experience Level Distribution</b></p></center>
-      </div>
-         
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <!-- Talent Pool Section -->
 
 
+
+
+<section id="talentpool" class="about section light-background">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Talent Pool</h2>
+    <p>Trusted by 103 out of 111 Indian unicorns. If they rely on Coding Ninjas talent—why shouldn’t you?</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Chart carousel -->
+      <div class="col-lg-8 content">
+        <div id="talentCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <canvas id="locationChart" width="400" height="400"></canvas>
+              <center><p><br><b>Primary Location Preference Distribution</b></p></center>
             </div>
-            
+            <div class="carousel-item">
+              <canvas id="profileChart" width="400" height="400"></canvas>
+              <center><p><br><b>Primary Profile Preference Distribution</b></p></center>
+            </div>
+            <div class="carousel-item">
+              <canvas id="ageChart" width="400" height="400"></canvas>
+              <center><p><br><b>Experience Level Distribution</b></p></center>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#talentCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#talentCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
 
-          <div class="col-lg-4 content" data-aos="fade-up" data-aos-delay="200">
-            
-            <ul>
+      <!-- Checklist section -->
+      <div class="col-lg-4 content" data-aos="fade-up" data-aos-delay="200">
+        <ul>
               
 
               <li><i class="bi bi-check2-all"></i> <span>Pan-India Presence – Our talent pool spans across major tech hubs like Delhi NCR, Bengaluru, Hyderabad, and more.</span></li>
@@ -481,76 +470,76 @@
 <li><i class="bi bi-check2-all"></i> <span>Skill-Matched Hiring – All candidates are trained in job-specific tech stacks, helping you screen and hire faster.</span></li>
 
             </ul>
-          </div>
-        </div>
-
       </div>
-     
+    </div>
+  </div>
+</section>
 
-    </section>
-     
-     
-    
 
-             <script>
-  // Pie Chart 1: Location Preference
-  new Chart(document.getElementById("locationChart"), {
-    type: "pie",
-    data: {
-      labels: ["Bengaluru", "Hyderabad", "Delhi NCR", "Pune", "Mumbai", "Chennai", "Remote",  "Kolkata", "Other"],
-      datasets: [{
-        backgroundColor: ["#06D6A0", "#6A0572", "#073B4C", "#EF476F", "#118AB2", "#FFB703", "#A7C957",  "#FF6B6B", "#8ECAE6"],
-        data: [18,15,35,6,4,3,9,2,8]
-      }]
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  let chartInstances = {
+    locationChart: null,
+    profileChart: null,
+    ageChart: null
+  };
+
+  const chartConfigs = {
+    locationChart: {
+      labels: ["Bengaluru", "Hyderabad", "Delhi NCR", "Pune", "Mumbai", "Chennai", "Remote", "Kolkata", "Other"],
+      data: [18, 15, 35, 6, 4, 3, 9, 2, 8],
+      title: "Primary Location Preference"
     },
-    options: {
-      plugins: {
-        title: {
-          display: true,
-          text: "Primary Location Preference"
-        }
-      }
-    }
-  });
-
-  // Pie Chart 2: Profile Preference
-  new Chart(document.getElementById("profileChart"), {
-    type: "pie",
-    data: {
-      labels: ["Software Development Engineer (SDE)", "Frontend Developer (React.js)", "Backend Developer (Node.js)", "Data Analyst", "SQL Developer", "Power BI / Tableau Analyst", "Excel Specialist", "Data Scientist", "Other"],
-      datasets: [{
-        backgroundColor: ["#1b9e77", "#d95f02", "#7570b3", "#e6ab02", "#a6761d", "#666666", "#1f78b4", "#3b9d9b", "#c47d9c"],
-        data: [25,13,7,21,8,8,14,3,1]
-      }]
+    profileChart: {
+      labels: ["SDE", "Frontend (React.js)", "Backend (Node.js)", "Data Analyst", "SQL Developer", "Power BI / Tableau", "Excel Specialist", "Data Scientist", "Other"],
+      data: [25, 13, 7, 21, 8, 8, 14, 3, 1],
+      title: "Preferred Job Profiles"
     },
-    options: {
-      plugins: {
-        title: {
-          display: true,
-          text: "Preferred Job Profiles"
-        }
-      }
-    }
-  });
-
-  // Pie Chart 3: Experience Distribution
-  new Chart(document.getElementById("ageChart"), {
-    type: "pie",
-    data: {
+    ageChart: {
       labels: ["Fresher", "0-1 Years", "1-2 Years", "2-3 Years", "3+ Years"],
-      datasets: [{
-        backgroundColor: ["#4E79A7", "#F28E2B", "#E15759", "#76B7B2", "#E888F5"],
-        data: [61,17,14,7,1]
-      }]
-    },
-    options: {
-      plugins: {
-        title: {
-          display: true,
-          text: "Age Group Distribution"
+      data: [61, 17, 14, 7, 1],
+      title: "Experience Level Distribution"
+    }
+  };
+
+  function createPieChart(id) {
+    if (chartInstances[id]) return; // prevent duplicate render
+    const ctx = document.getElementById(id);
+    const config = chartConfigs[id];
+
+    chartInstances[id] = new Chart(ctx, {
+      type: "pie",
+      data: {
+        labels: config.labels,
+        datasets: [{
+          data: config.data,
+          backgroundColor: [
+            "#06D6A0", "#6A0572", "#073B4C", "#EF476F", "#118AB2",
+            "#FFB703", "#A7C957", "#FF6B6B", "#8ECAE6"
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: config.title
+          }
         }
       }
-    }
+    });
+  }
+
+  // Render the first chart immediately
+  createPieChart("locationChart");
+
+  // Listen to carousel change event
+  document.getElementById("talentCarousel").addEventListener("slid.bs.carousel", function (e) {
+    const charts = ["locationChart", "profileChart", "ageChart"];
+    const activeIndex = e.to;
+    const chartId = charts[activeIndex];
+    if (chartId) createPieChart(chartId);
   });
 </script>
 
@@ -596,7 +585,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form id="hireform" action="https://api.codingninjas.in/api/v2/jobs/post_employer_details" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="hireform" action="http://az-growth-staging-1.codingninjas.com/api/v2/jobs/post_employer_details" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
             
                 <div class="col-md-12">
@@ -743,17 +732,18 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
 </body>
 
